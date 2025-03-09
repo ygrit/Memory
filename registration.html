@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <!--<script src="https://kit.fontawesome.com/0dfb43c94e.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <script src="registrationscript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="barre">
+        <ul>
+            <li class="linkg"><a href=index.html>Accueil</a></li>
+            <li class="linkg"><a href="registration.html">S'inscrire</a></li>
+            <li class="linkg"><a href="login.html">Se connecter </a></li>
+            <li class="linkg"><a href="profil.html">Profil</a></li>
+            <li class="linkg"><a href="game.html">Jouer</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>Inscription</h1>
+        </div>
+
+        <div class="inscription">
+            <h2 id="message"></h2>
+            <div id="alert"></div>
+        
+        <form class="form" id="form" >
+            <!--<form action="" method="post" class="form" id="form" >--->
+            <div class="form-control">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username"placeholder="Votre nom">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control ">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="max@yahoo.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Mot de passe">
+                <!--pattern="^^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"-->
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+                <div class="line">
+                    <div class="faible"></div><div class="moyen"></div><div class="fort"></div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirmation du mot de passe</label>
+                <input type="password" id="password2" name="password2" placeholder="Confirmer votre mot de passe">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <button type="submit" id="submit"> <i class="fas fa-user-plus"></i> S'inscrire</button>
+        </form>
+        <!-- <section class="infos">
+            <h2>Consignes du mot de passe :</h2>
+            <ul>
+                <li id="minuscule">Doit comporter une minuscule</li>
+                <li id="majuscule">Doit comporter une majuscule</li>
+                <li id="chiffre">Doit comporter un chiffre</li>
+                <li id="nbCaracteres">Doit faire au minimum 8 caractères</li>
+            </ul> 
+        </section>-->
+    </div>
+    
+</div>
+
+</body>
+
+</html>

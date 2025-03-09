@@ -1,0 +1,499 @@
+:root{
+    --color-first:#49c7eed9;
+    --color-second:#f0f0f0;
+    --color-success:#01441d;
+    --color-error:#50201b;
+ }
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(208, 219, 219);
+}
+
+/*barre de navigation */
+.barre{
+    margin-top: 10px;
+}
+.linkg{
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin:5 px 10 px;
+    padding: 10px;
+    background-color: rgb(138, 189, 189);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 1px 10px 34px 10px rgba(0,0,0,0.7);
+    
+}
+/*liens de barre de navigation*/
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+      
+}
+.barre ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.linkg:hover {
+color:rgb(48, 46, 59);
+background-color: rgb(221, 231, 231);
+font-weight: bolder;
+}
+
+.linkg a::after {
+  display: inline-block;
+  color: #000;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+/*Centrer la page, le document en général*/
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin:80px 0 0 0 ;
+
+
+}
+h1{
+    font-size: 24px;
+    padding: 20px;
+    text-shadow: #106586 1px 1px 0;
+ 
+}
+
+
+h2{
+    font-size: 22px;
+    padding:20px;
+}
+
+h3{
+    font-size: 21px;
+    padding: 20px;;
+}
+
+p{
+    padding: 15px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+
+/*Centrer la partie Section et les formulaires ----PAGE REGISTRATION-------*/
+
+.container{
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.5);
+    min-width: 450px;
+    max-width: 100%;
+    background-color: rgb(57, 136, 136);
+    margin-top: 35px;
+}
+
+    
+.header{
+    background: rgb(57, 136, 136);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.form{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border:  2px solid var(--color-second);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+}
+.form-control i{
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    visibility: hidden;
+}
+
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.form button, #valider{
+    background: rgb(14, 204, 218);
+    border: 2px solid var(--color-first);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: inherit;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+}
+.play{
+    width: 60px;
+    font-weight: bold;
+}
+
+.form-control.success input{
+    border-color: var(--color-success);
+}
+.form-control.error input{
+    border-color: var(--color-error);
+}
+.form-control.success i.fa-check-circle{
+    color: var(--color-success);
+    visibility: visible;
+    
+}
+.form-control.error i.fa-exclamation{
+    color: var(--color-error);
+    visibility: visible;
+}
+.form-control.error small{
+    color: var(--color-error);
+    visibility: visible;
+}
+
+.fa-check-circle{
+    margin-top: 28px;
+    margin-left: 35px;
+}
+
+.fa-exclamation{
+    margin-top: 28px;
+    margin-left: 35px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.image img{
+    min-width: 500px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: #000 2px 2px 5px;
+    margin-top: 20px;
+}
+
+/****** Bouton de choix de zone de jeux sur la PAGE GAME**********/
+.btn{
+    width:fit-content;
+    padding: 10px 25px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: rgb(122, 201, 246);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 4px 16px 4px rgba(0,0,0,0.62);
+    cursor: pointer;
+}
+.btn:hover{
+    
+    opacity: 0.5;
+}
+/****** PAGE PROFIL  -  tableau d'utilisateur***********/
+
+.field-size, .score-table{
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:90%;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border: 5px solid white;
+    padding: 20px;
+    
+}
+
+/*sur la page Profil - expo des données*/
+
+.score-table{
+    border: 5px solid white;
+    padding: 20px;
+}
+.user, .descript, .connect, .cardplay{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    
+    
+}
+.user{
+    min-width:450px;
+}
+
+/* pour selectionner type de jeu sur la page Profil*/
+.select{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.descript{
+max-width: 800px;
+border: 1px solid black;
+border-radius: 10px;
+box-shadow: 0px 10px 13px #000000;
+padding: 5px, 15px;
+background-color: #438aa5;
+
+}
+
+
+/*Page d'inscription / registration */
+
+.validate {
+    color: green;
+}
+
+.login {
+    font-weight: bold;
+    display: inline-block;
+    
+    font-size: 1.3rem;
+}
+
+.infos li {
+    color: red;
+}
+
+
+label {
+    
+    width:100%;
+    margin-bottom: 15px;
+    
+}
+
+input {
+    display: inline-block;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+   
+}
+
+button {
+    width: fit-content;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border:2 px solid black;
+    border-radius: 5px;
+    color:#000;
+}
+
+  /* Bloque pour se connecter*/
+  .connect{
+    width: 650px;
+    background-color: grey;
+  }
+
+  
+section {
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    width: fit-content;
+    padding-bottom: 15px;
+
+}
+
+/*ligne de fiabilité de mot de passe sur le formulaire*/
+.line{
+    display:flex;
+    flex-direction: row;
+    height:15px;
+    width:100%;
+}
+.faible{
+border-top: 3px solid #ea3b27;
+}
+.moyen{
+    border-top: 3px solid #deb71c;
+}
+.fort{
+    border-top: 3px solid #05550e;
+}
+      
+
+/* Pour les erreurs pendant la validation de formulaire*/
+
+.error {
+    color: red;
+    
+    
+}
+/* Page de Profil*/
+
+.score-table{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 6px solid rgb(6, 143, 174);
+    /* border-radius: 10px;*/
+    
+}
+
+.pseudo, .score, .game-type, .date{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:5px;
+    box-shadow:0 ;
+ 
+}    
+.cardplay img{
+    height: 200px;
+    width: fit-content;
+    border-radius: 10%;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 11px 16px rgba(0,0,0,0); 
+    
+}
+
+.user img{
+    height: 150px;
+    border:5px solid rgb(69, 142, 237);
+    border-radius: 70px;
+}
+
+/*************Page de jeu Memory***************/
+
+.heading {
+    font-size: 2em;
+  }
+  
+  .description {
+    font-size: 1.5em;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+#new-game-button {
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 0.5em;
+    background: rgb(59, 58, 58);
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease-in-out;
+    padding: 0.5em 1.5em;
+    border-radius: 1.5em;
+    font-size: 1em;
+    font-family: inherit;
+    letter-spacing: inherit;
+  }
+  
+  #new-game-button:hover {
+    opacity: 0.8;
+  }
+  
+  .card {
+    width: 5em;
+    height: 5em;
+    perspective: 50em;
+    cursor: pointer;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .card.visible .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 0.5em;
+    box-shadow: 0.05em 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.1);
+    font-size: 2.5em;
+    color: white;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }

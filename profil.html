@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <!--<script src="https://kit.fontawesome.com/0dfb43c94e.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <script src="profilscript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<nav class="barre">
+    <ul>
+        <li class="linkg"><a href=index.html>Accueil</a></li>
+        <li class="linkg"><a href="registration.html">S'inscrire</a></li>
+        <li class="linkg"><a href="login.html">Se connecter </a></li>
+        <li class="linkg"><a href="profil.html">Profil</a></li>
+        <li class="linkg"><a href="game.html">Jouer</a></li>
+    </ul>
+
+</nav>
+    <section class="profil">
+        
+        <!-- Profil de l'utilisateur-->
+        <div class="user">
+            <h1 id="h1">Profil</h1>
+            <h3></h3>
+            <div><img src="ressources/question.svg" alt="Photo d'utilisateur" ></div>
+            <p class="name"> Pseudo: `${name}`</p>
+            <p class="mail">Email : `${email}`</p>
+            <p id="curent-date"></p>
+
+        </div>
+        <!-- Derniers scores enregistrés -->
+
+        <div class="score-table">
+            <div class="pseudo">
+                <p>Pseudo :</p>
+                <p class="pseudo"></p>
+            </div>
+            
+            <div class="score">
+                <p>Derniers Scores :</p>
+                <p class="scores"></p>
+            </div>
+            
+            <div class="game-type">
+                <p>Type de jeu :</p>
+                <p class="game-type"></p>
+            </div>
+            
+            <div class="date">
+                <p>Date :</p>
+                <p id="curent-date"></p>
+            
+            </div>
+            
+        </div>    
+            
+    </section>
+    <h1>Choix du thème</h1>
+    
+    <section>
+        <!-- choix de thèmes -->
+        <form id="selectType">
+            <div class="select">
+
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="animals1" checked />
+                 <label for="animals1">Animaux1</label>
+                 <img src="ressources/animaux/1.webp"> 
+            </div>
+
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="animalsdom" checked />
+                 <label for="animalsdom">Animaux domestiques</label>
+                 <img src="ressources/animauxdomestiques/5.jpg">
+            </div>
+
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="animalsan"  />
+                 <label for="animalsan">Animaux animés</label>
+                 <img src="ressources/animauxAnimes/7.webp">
+            </div>
+
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="dogs" />
+                 <label for="dogs">Chiens</label>
+                 <img src="ressources/chiens/17.webp">
+            </div>
+
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="dinos" />
+                 <label for="dinos">Dinausaures</label>
+                 <img src="ressources/dinosaures/3.jpg">
+            </div>
+
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="dinos2" />
+                 <label for="dinos2">Dinausaures avec les noms</label>
+                 <img src="ressources/dinosauresAvecNom/2.jpg">
+            </div>
+            
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="veget" />
+                 <label for="veget">Légumes</label>
+                 <img src="ressources/memory-legume/5.svg">
+            </div>
+
+           
+            <div class="cardplay"> 
+                <input type="radio" id="memo" name="memo" value="alphabet" />
+                 <label for="alphabet">Alphabet Scrabble</label>
+                 <img src="ressources/alphabet-scrabble/11.png">
+            </div>
+        </div>
+        </form>
+
+        <div class="field-size">
+            <form id="selectForm">
+            <select name="select" id="select">
+                <option value="type" id="typ" class="btn">4 x 3</option>
+                <option value="type" id="typ" class="btn">4 x 4</option>
+
+            </select>
+            <button type="submit" id="submitButton" class="btn play">Jouer</button>
+            <!--<div ><a href="game.html">Jouer</a></div>-->
+            </form>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
