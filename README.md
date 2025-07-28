@@ -1,2 +1,2 @@
 # Memory
-Jeu Memory - HTML5, CSS3 , JavaScript 
+Jeu Memory/ Jeu de mémoire - HTML5, CSS3 , JavaScript 
